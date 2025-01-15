@@ -5,7 +5,7 @@ A function that deterministically checks if a number is prime.
 ## Install
 
 ```sh
-npm install --save crypto-prime-test
+npm install crypto-prime-test
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install --save crypto-prime-test
 ```ts
 import isPrime from 'crypto-prime-test';
 
-// Check if a number is prime for sure, deterministically
+// Let's check if a number is prime for sure, deterministically
 
 isPrime ( 465207927154668043n ); // => true
 isPrime ( 465207927154668041n ); // => false
