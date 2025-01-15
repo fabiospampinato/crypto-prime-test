@@ -28,7 +28,9 @@ const sqrt = ( value: bigint ): bigint => {
 
 const isPrime = ( n: bigint ): boolean => {
 
-  if ( !isProbablyPrime ( n, 8 ) ) return false;
+  const milleRabinRounds = Math.ceil ( n.toString ( 2 ).length / 2 );
+
+  if ( !isProbablyPrime ( n, milleRabinRounds ) ) return false;
 
   const primesLimit = Number ( sqrt ( n ) );
   const primes = sieve.iterator ( primesLimit );
